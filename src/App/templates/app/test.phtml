@@ -1,0 +1,15 @@
+<?php
+/** @var \App\Form\Form $form */
+
+$form->setAttribute('action', $this->url('test'));
+$form->prepare();
+
+echo $this->form()->openTag($form);
+
+echo $this->formCollection($form);
+
+?>
+<input type="submit">
+<?php
+
+echo $this->form()->closeTag();
