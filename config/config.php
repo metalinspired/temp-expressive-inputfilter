@@ -14,6 +14,12 @@ $aggregator = new ConfigAggregator([
     // Include cache configuration
     new ArrayProvider($cacheConfig),
 
+    \Zend\Form\ConfigProvider::class,
+    \Zend\Hydrator\ConfigProvider::class,
+    \Zend\I18n\ConfigProvider::class,
+    \Zend\InputFilter\ConfigProvider::class,
+    \Zend\Validator\ConfigProvider::class,
+
     // Default App module config
     App\ConfigProvider::class,
 
